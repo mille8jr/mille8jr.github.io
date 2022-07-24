@@ -12,6 +12,10 @@ body{
     max-width: 500px;
 
 }
+main {
+    margin: auto;
+    display: grid;
+}
 
 /*Header*/
 
