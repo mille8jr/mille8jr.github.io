@@ -1,3 +1,171 @@
-h1{
+:root {
+    --main-color: #314f70;
+    --primary-accent: rgb(35, 197, 222);
+    --secondary-accent: rgb(180, 235, 255);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    /*box-sizing: border-box;*/
+    background-color: var(--main-color);
+    max-width: 500px;
+
+}
+
+/*Header*/
+
+.header-container {
+    /*a container for the logo and navbar
+    with a gradient background behind*/
+    /*background-image: linear-gradient(var(primary-accent), var(main-color));*/
+
+
+}
+
+.logo-container {
+    /*a container for the logo. This will
+    be more necessary when adding the Navbar*/
+    background-image: linear-gradient(var(--primary-accent), var(--main-color));
+    padding: 1em 0 6em 0;
+    margin: 0 0 -5em -1em;
     text-align: center;
 }
+
+.logo-img {
+    /*The logo image*/
+    max-width: 75%;
+    margin: -7em auto -9em auto;
+}
+
+.main-navigation {
+    /*NavBar - later project*/
+}
+
+
+/*main*/
+
+.main-container {
+    /*conatiner for the release name and 
+    type, album art and album audio, and 
+    external links to streaming services*/
+  background-color: inherit;
+
+}
+
+.release-info-container {
+    /*conatiner for the album name 
+    and release type*/
+    text-align: center;
+}
+
+.release-title {
+    /*Text of the title*/
+    color: var(--primary-accent);
+    font-size: 1.75rem;
+    margin: 1.5em 0 0 0;
+}
+
+.release-type {
+    /*Text of the release type*/
+    color: var(--secondary-accent);
+    font-size: .75rem;
+    margin: -3.25em 0 -1em 0;
+}
+
+.media-container {
+    /*Text of the type of release*/
+    color: var(--secondary-accent);
+    text-align: center;
+}
+
+.release-img {
+    /*Album Art*/
+    max-width: 80%;
+    aspect-ratio: 1 / 1;
+    background-color: var(--primary-accent);
+    border-radius: .5em;
+    margin: .75em 0 0 0;
+    z-index: 3;
+    box-shadow: 8px 8px 5px black;
+}
+
+.audio-container {
+    /*Audio play has a rectangular
+    background the floats behind the 
+    album art*/
+    max-width: 90%;
+    height: 150px;
+    background-color: var(--secondary-accent);
+    border-radius: .5em;
+    margin: -5em auto 0;
+}
+
+.audio-player {
+  margin: 6.4em 0;
+
+}
+
+
+
+.external-links-container {
+    /*container for collection of links
+    to external streaming services*/
+    max-width: 80%;
+    margin: 1em auto;
+
+}
+
+.external-links-container ul {
+      list-style: none;
+      display: grid;
+      margin: 0 0 0 -2.5em;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 2.5em;
+}
+
+.button-container {
+    /*Streaming service buttons*/
+    background-color: var(--primary-accent);
+    border-radius: .25em;
+    text-align: center;
+    padding: .005em;
+    margin: 1em 0 1em 0;
+}
+
+.button-container h3 {
+    color: var(--main-color);
+}
+
+
+/*footer*/
+
+footer {
+  background-color: black;
+  margin: 2em 0 0 0 ;
+}
+
+.social-links-container {
+    /*container for social media logos*/
+    color: white;
+    padding: 2em;
+
+}
+
+.social-links-container ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    margin: 0 0 0 -2.5em;
+}
+
+footer aside {
+  text-align: center;
+  font-size: .75em;
+  color: white;
+  padding: 0 0 2em 0;
+}
+
+
+
