@@ -132,8 +132,9 @@ body{
     margin: 1em 0 1em 0;
 }
 
-.button-container h3 {
+.button-container h3, .button-container a {
     color: var(--main-color);
+    text-decoration: none;
 }
 
 
