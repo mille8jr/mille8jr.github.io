@@ -159,6 +159,10 @@ footer {
     text-align: center;
     margin: 0 0 0 -2.5em;
 }
+.social-links-container a {
+    text-decoration: none;
+    color: var(--secondary-accent);
+}
 
 footer aside {
   text-align: center;
