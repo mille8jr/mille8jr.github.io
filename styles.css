@@ -5,9 +5,17 @@
   box-sizing: border-box;
 }
 
+
+
+.bodyContainer {
+  max-width: 1440px;
+  margin: 0 auto;
+  background-color: #00BACC;
+}
+
 body {
   font-family: Arial, sans-serif;
-  background-color: #ffffff;
+  background-color: #00BACC;
   color: #ffffff;
   margin: 0;
 }
@@ -82,7 +90,7 @@ section p {
 }
 
 .photo-container {
-  margin: 10px;
+  margin: 5px;
   width: 200px;
   height: 200px;
   overflow: hidden;
@@ -103,6 +111,7 @@ section p {
 .MusicAndTourDates{
   justify-content: center;
   text-align: center;
+  margin: 25px;
 }
 
 
@@ -118,37 +127,85 @@ section p {
   background-color: #d90e63;
   border-radius: 15px;
   transition: background-color 0.3s ease;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
 }
 
 .linktree-button:hover {
   background-color: #c30753;
 }
 
+.press-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px;
+}
+
+.press-kit-button {
+  background-color: #00abbb;
+  border: 5px solid #d90e63;
+  margin-left: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+}
+
+.press-kit-button:hover {
+  background-color: #d90e63;
+  color: #fff;
+}
+
 #container {
   display: flex;
-  justify-content: center;
-  padding-bottom: 3rem;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+  padding-bottom: 0;
 }
 
 .box {
-  width: 3fr;
-  height: 100px;
-  margin: 10px;
+  flex-basis: calc(33.33% - 20px);
+  height: auto;
+  margin: 20px;
+  padding: 10px;
+  background-color: #d90e63;
+  border-radius: 3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
 }
 
 .box p {
   margin: 5px;
 }
 
-@media screen and (max-width: 768px) {
+.box a {
+  margin-top: auto;
+  color: white;
+}
+
+.box a:hover {
+  color: rgb(0, 0, 0);
+}
+
+@media screen and (max-width: 900px) {
   #container {
     flex-direction: column;
     align-items: left;
+    width: 95%
   }
 
   .box {
-    padding: 4em;
+    padding: 1em;
+    flex-basis: auto;
   }
+}
+
+#videos {
+  margin: 20px;
 }
 
 .video-section {
