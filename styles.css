@@ -1,175 +1,189 @@
-:root {
-    --main-color: #314f70;
-    --primary-accent: rgb(35, 197, 222);
-    --secondary-accent: rgb(180, 235, 255);
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    margin: 0;
-    padding: 0;
-    /*box-sizing: border-box;*/
-    background-color: var(--main-color);
-    max-width: 500px;
-    margin: auto;
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  color: #ffffff;
+  margin: 0;
 }
 
-
-/*Header*/
-
-.header-container {
-    /*a container for the logo and navbar
-    with a gradient background behind*/
-    /*background-image: linear-gradient(var(primary-accent), var(main-color));*/
-
-
-}
-
-.logo-container {
-    /*a container for the logo. This will
-    be more necessary when adding the Navbar*/
-    background-image: linear-gradient(var(--primary-accent), var(--main-color));
-    padding: 1em 0 6em 0;
-    margin: 0 0 -5em -1em;
-    text-align: center;
-}
-
-.logo-img {
-    /*The logo image*/
-    max-width: 75%;
-    margin: -7em auto -9em auto;
-}
-
-.main-navigation {
-    /*NavBar - later project*/
-}
-
-
-/*main*/
-
-.main-container {
-    /*conatiner for the release name and 
-    type, album art and album audio, and 
-    external links to streaming services*/
-  background-color: inherit;
-
-}
-
-.release-info-container {
-    /*conatiner for the album name 
-    and release type*/
-    text-align: center;
-}
-
-.release-title {
-    /*Text of the title*/
-    color: var(--primary-accent);
-    font-size: 1.75rem;
-    margin: 1.5em 0 0 0;
-}
-
-.release-type {
-    /*Text of the release type*/
-    color: var(--secondary-accent);
-    font-size: .75rem;
-    margin: -3.25em 0 -1em 0;
-}
-
-.media-container {
-    /*Text of the type of release*/
-    color: var(--secondary-accent);
-    text-align: center;
-}
-
-.release-img {
-    /*Album Art*/
-    max-width: 80%;
-    aspect-ratio: 1 / 1;
-    background-color: var(--primary-accent);
-    border-radius: .5em;
-    margin: .75em 0 0 0;
-    z-index: 3;
-    box-shadow: 8px 8px 5px black;
-}
-
-.audio-container {
-    /*Audio play has a rectangular
-    background the floats behind the 
-    album art*/
-    max-width: 90%;
-    height: 150px;
-    background-color: var(--secondary-accent);
-    border-radius: .5em;
-    margin: -5em auto 0;
-}
-
-.audio-player {
-  margin: 6.4em 0;
-
-}
-
-.external-links-container {
-    /*container for collection of links
-    to external streaming services*/
-    max-width: 80%;
-    margin: 1em auto;
-
-}
-
-.external-links-container ul {
-      list-style: none;
-      display: grid;
-      margin: 0 0 0 -2.5em;
-      grid-template-columns: 1fr 1fr;
-      column-gap: 2.5em;
-}
-
-.button-container {
-    /*Streaming service buttons*/
-    background-color: var(--primary-accent);
-    border-radius: .25em;
-    text-align: center;
-    padding: .005em;
-    margin: 1em 0 1em 0;
-}
-
-.button-container h3, .button-container a {
-    color: var(--main-color);
-    text-decoration: none;
-}
-
-
-/*footer*/
-
-footer {
-  background-color: black;
-  margin: 2em 0 0 0 ;
-}
-
-.social-links-container {
-    /*container for social media logos*/
-    color: white;
-    padding: 2em;
-
-}
-
-.social-links-container ul {
-    list-style: none;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    text-align: center;
-    margin: 0 0 0 -2.5em;
-}
-.social-links-container a {
-    text-decoration: none;
-    color: var(--secondary-accent);
-}
-
-footer aside {
+/* Header */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #D90E63;
   text-align: center;
-  font-size: .75em;
-  color: white;
-  padding: 0 0 2em 0;
+  padding: 20px;
+}
+
+header img {
+  width: 100px;
+  padding-right: 10px;
+}
+
+header h1 {
+  font-size: 48px;
+  margin: 0;
+}
+
+/* Navigation */
+nav {
+  background-color: #D90E63;
+  text-align: center;
+  padding: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* Main sections */
+section {
+  background-color: #00BACC;
+  color: #ffffff;
+  padding: 20px 50px;
+}
+
+section h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+section p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+
+.photo-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.photo-container {
+  margin: 10px;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+}
+
+.photo-container:hover img {
+  transform: scale(1.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.photo-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.MusicAndTourDates{
+  justify-content: center;
+  text-align: center;
 }
 
 
 
+.linktree-button {
+  display: inline-block;
+  padding: 20px 40px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background-color: #d90e63;
+  border-radius: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.linktree-button:hover {
+  background-color: #c30753;
+}
+
+#container {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 3rem;
+}
+
+.box {
+  width: 3fr;
+  height: 100px;
+  margin: 10px;
+}
+
+.box p {
+  margin: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  #container {
+    flex-direction: column;
+    align-items: left;
+  }
+
+  .box {
+    padding: 4em;
+  }
+}
+
+.video-section {
+  background-color: #00BACC;
+  color: white;
+  padding: 60px 0;
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+}
+
+.video {
+  margin: 0 5px;
+  width: 50%;
+}
+
+.video iframe {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  height: 250px;
+}
+
+
+
+/* Footer */
+footer {
+  background-color: #D90E63;
+  text-align: center;
+  padding: 20px;
+}
+
+footer p {
+  font-size: 14px;
+  margin: 0;
+}
