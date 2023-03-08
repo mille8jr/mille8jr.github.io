@@ -107,13 +107,18 @@ section p {
   object-fit: cover;
 }
 
+.link_container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 25px;
+}
 
 .MusicAndTourDates{
   justify-content: center;
   text-align: center;
   margin: 25px;
 }
-
 
 
 .linktree-button {
@@ -133,6 +138,44 @@ section p {
 
 .linktree-button:hover {
   background-color: #c30753;
+}
+
+.Contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 25px;
+}
+
+.Contact h2 {
+  margin-bottom: 20px;
+}
+
+.contact-button {
+  display: inline-block;
+  padding: 20px 40px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background-color: #d90e63;
+  border-radius: 15px;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.contact-button:hover {
+  background-color: #c30753;
+}
+
+@media screen and (max-width: 900px) {
+  .link_container {
+    flex-direction: column;
+    align-items: center;
+    width: 95%
+  }
 }
 
 .press-header {
