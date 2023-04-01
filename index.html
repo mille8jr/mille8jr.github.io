@@ -4,14 +4,27 @@
     <meta charset="UTF-8">
     <title>Jackson and the Poolsharks EPK</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/ff5158b551.js" crossorigin="anonymous"></script>
   </head>
+  
   <body>
     <div class="bodyContainer">
-      <header>
-        <img src="Images/logo.png">
-        <h1>Jackson and the Poolsharks</h1>
+      <header id="header-bar">
+        <div class="header-content">
+          <img src="Images/logo.png">
+          <h1>Jackson and the Poolsharks</h1>
+        </div>
+        <div class="navbar">
+          <ul>
+            <li><a href="#bio">Bio</a></li>
+            <li><a href="#music">Music</a></li>
+            <li><a href="#press">Press</a></li>
+            <li><a href="#videos">videos</a></li>
+          </ul>
+        </div>
       </header>
-      <section>
+
+      <section id="bio">
         <h2>Bio</h2>
         <p>Jackson and the Poolsharks centers around the stylings of Detroit-based songwriter Daniel Jackson. While remaining reverent to the southern rock and blues records his father exposed him to at a young age (Lynyrd Skynyrd, Allman Brothers, Rolling Stones), Jackson includes the more contemporary post-punk and power-pop influences he explored in his formative years. The result is a punky yet groovy, dirty yet pop-sensible hybrid which Jackson can claim entirely as his own. His debut album tells stories of heartache and lost love, but with such infectious melodies, it's hard not to want to stomp your foot and shout along.​
 
@@ -20,54 +33,81 @@
       </section>
       <section class="photo-section">
         <div class="photo-container">
-          <img src="Images/3679C1D6-D2DE-47F7-9A6F-74EAD7F63A93_1_105_c.jpeg">
+          <img src="Images/3679C1D6-D2DE-47F7-9A6F-74EAD7F63A93_1_105_c.jpeg" onclick="openModal(this.src)">
         </div>
         <div class="photo-container">
-          <img src="Images/53668415_880444282299041_4403674142327439360_o.jpg">
+          <img src="Images/53668415_880444282299041_4403674142327439360_o.jpg" onclick="openModal(this.src)">
         </div>
         <div class="photo-container">
-          <img src="Images/band2.jpg">
+          <img src="Images/band2.jpg" onclick="openModal(this.src)">
         </div>
         <div class="photo-container">
-          <img src="Images/E9EB139C-1181-4F51-9210-AD3E6E65E79A_1_105_c.jpeg">
+          <img src="Images/E9EB139C-1181-4F51-9210-AD3E6E65E79A_1_105_c.jpeg" onclick="openModal(this.src)">
         </div>
         <div class="photo-container">
-          <img src="Images/IMG_0224.jpg">
+          <img src="Images/j1.jpg" onclick="openModal(this.src)">
         </div>
         <div class="photo-container">
-          <img src="Images/j1.jpg">
+          <img src="Images/JackArt.jpg" onclick="openModal(this.src)">
+        </div>
+        <div class="photo-container">
+          <img src="Images/IMG_0224.jpg" onclick="openModal(this.src)">
+        </div>
+        <div class="photo-container">
+          <img src="Images/IMG_2117.JPG" onclick="openModal(this.src)">
+        </div>
+        <div class="photo-container">
+          <img src="Images/IMG_0222.jpg" onclick="openModal(this.src)">
+        </div>
+        <div class="photo-container">
+          <img src="Images/Morgan.jpg" onclick="openModal(this.src)">
         </div>
       </section>
-      <div class="link_container">
+      <!-- The modal for zoomed images -->
+      <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImg">
+      </div>
+
+      <div class="link_container" id="music">
         <section class="MusicAndTourDates">
           <h2>Music and Tour Dates</h2>
+          <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/5rzs7PJq9lx38AtW94xEuz?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
           <a href="https://linktr.ee/jacksonandthepoolsharks" class="linktree-button" target="_blank">Visit Our Linktree</a>
         </section>
         <section class="Contact">
-          <h2>Looking to Contact Us?</h2>
-          <a href="mailto:booking@jacksonandthepoolsharks.com" class="contact-button">Click Here</a>
+          <h2>Connect With Us</h2>
+          <div class="social-media-links">
+            <a href="https://www.facebook.com/jacksonandthepoolsharks/" target="_blank"><i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i></a>
+            <a href="https://www.instagram.com/jacksonandthepoolsharks/?hl=en" target="_blank"><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a>
+            <a href="https://www.tiktok.com/@jacksonandthepoolsharks" target="_blank"><i class="fa-brands fa-tiktok" style="color: #ffffff;"></i></a>
+          </div>
+          <a href="mailto:booking@jacksonandthepoolsharks.com" class="contact-button">Click to Email</a>
         </section>
+        
+        
       </div>
       <hr>
       <section>
-        <div class="press-header">
+        <div class="press-header" id="press">
           <h2>Press</h2>
-          <a href="https://drive.google.com/drive/folders/1rJEKB19dPl4nbxZzx0xvAqdGeFzqvmQA?usp=share_link" class="press-kit-button linktree-button" target="_blank">Click here for our Press Kit</a>
+          <a href="https://drive.google.com/drive/folders/1rJEKB19dPl4nbxZzx0xvAqdGeFzqvmQA?usp=share_link" class="press-kit-button linktree-button" target="_blank">Click here for<br>Marketing Material</a>
         </div>
         <div id="container">
           <div class="box">
             <p>"Jackson and the Poolsharks continue to wow metro-detroit with their catchy Rock and Roll sound"</p>
             <p>-Kim DeGiulio</p>
-            <a href="https://www.facebook.com/jacksonandthepoolsharks/videos/610279427410980" target="_blank">Click on Detroit Local 4 News</a>
+            <a href="https://www.facebook.com/jacksonandthepoolsharks/videos/610279427410980" target="_blank">Watch on Click on Detroit<br>From 2022</a>
           </div>
           <div class="box">
-            <p>Interview and Live Performance with Lee Thomas</p>
-            <a href="https://www.fox2detroit.com/video/652146" target="_blank">Fox 2 Detroit</a>
+            <p>"A little bit of everything"</p>
+            <p>-Lee Thomas</p>
+            <a href="https://www.fox2detroit.com/video/652146" target="_blank">Watch on Fox 2 Detroit<br>From 2020</a>
           </div>
           <div class="box">
             <p>"Jackson and The Poolsharks is a local band tearing up the music scene with their infectious melodies."</p>
             <p>-Lee Thomas</p>
-            <a href="https://www.fox2detroit.com/video/652146" target="_blank">Fox 2 Detroit</a>
+            <a href="https://www.fox2detroit.com/video/652146" target="_blank">Watch on Fox 2 Detroit<br>From 2017</a>
           </div>
         </div>
       </section>
@@ -80,6 +120,12 @@
           <div class="video">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/Uhh1HA-_eDE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
           </div>
+          <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/2zPyBT8kfJc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/K36sZkDsWmY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
         </div>
       </section>
 
@@ -88,4 +134,5 @@
       </footer>
     </div>
   </body>
+  <script src="actions.js"></script>
 </html>
